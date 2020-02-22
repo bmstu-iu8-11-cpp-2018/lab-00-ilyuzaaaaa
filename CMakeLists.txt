@@ -11,8 +11,6 @@ set(CMAKE_CXX_FLAGS
 
 
 # enum your files
-add_executable(executable
-main1.cpp
-)
+add_executable(executable main1.cpp)
 find_package (Threads)
 target_link_libraries(executable -fsanitize=address gtest ${CMAKE_THREAD_LIBS_INIT})
